@@ -2,17 +2,28 @@
 
 > **Course:** Sparta Global – Tech613 DevOps  
 > **Author:** Oan Zia  
+> **Trainer / Collaborator:** Ramon Rossi ([@daraymonsta](https://github.com/daraymonsta))  
 > **Repository:** [oanzia99/tech613-ttt-app-cicd-jenkins](https://github.com/oanzia99/tech613-ttt-app-cicd-jenkins)  
 > **Application:** Sparta Tic Tac Toe Node.js Application (Version 1.2.0)  
-> **Purpose:** Automated Continuous Integration & Continuous Delivery (CI/CD) Pipeline with Jenkins  
+> **Documentation Hub:** [oanzia99/tech613-devops/cicd](https://github.com/oanzia99/tech613-devops/blob/main/cicd/README.md)  
 
 ---
 
 ## Purpose of this Repository
 
-This repository hosts the **Sparta Tic Tac Toe Node.js application (Version 1.2.0)** configured to power an automated **Continuous Integration & Continuous Delivery (CI/CD)** pipeline using **Jenkins**, GitHub Webhooks, and automated quality testing gates.
+This repository hosts the application source code for the **Sparta Tic Tac Toe Node.js application (Version 1.2.0)** configured to power an automated **Continuous Integration & Continuous Delivery (CI/CD)** pipeline using **Jenkins**, GitHub Webhooks, and automated AWS EC2 deployments.
 
-When code changes are pushed to the development branch (`dev`), Jenkins automatically executes test suites (`node --test`), validates code integrity, and merges approved changes into the `main` deployment branch.
+When code changes are pushed to the development branch (`dev`), Jenkins automatically executes test suites (`node --test`), validates code integrity in **Job 1**, merges approved changes into the `main` deployment branch via Git Publisher in **Job 2**, and securely deploys the tested code to an AWS EC2 instance in **Job 3**.
+
+---
+
+## CI/CD Pipeline Documentation
+
+> [!NOTE]
+> Per course guidelines and feedback from trainer Ramon Rossi ([@daraymonsta](https://github.com/daraymonsta)), all comprehensive CI/CD pipeline documentation, architecture diagrams, step-by-step job configurations (Jobs 1, 2, and 3), execution logs, and verification evidence are centrally hosted in the private course learning repository:
+>
+> 🔗 **[CI/CD Pipeline Complete Documentation Guide](https://github.com/oanzia99/tech613-devops/blob/main/cicd/README.md)**  
+> 🔗 **[Main Course Learning Hub (Section 11)](https://github.com/oanzia99/tech613-devops#11-end-to-end-automated-cicd-pipeline-with-jenkins-github-webhooks--aws-ec2-deployment)**
 
 ---
 
