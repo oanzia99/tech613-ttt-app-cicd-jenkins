@@ -1140,7 +1140,7 @@ function createServer({ port = 3000, logger, metrics } = {}) {
 						</div>
 						<p class="page-footer"><div style="color:#00ff66;font-weight:bold;margin:8px 0;">Updated: 13 Nov 2026 - 18:25 CET (1st Change)</div>Copyright © 2026 Sparta Global</p>
 						<p class="mode-pill">Mode: ${mode.modeLabel}</p>
-						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)}</p>
+						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)} - Updated: 13 Nov 2026 18:30 CET (1st Change)</p>
 						<script src="/app.js"></script>
 					</body>
 				</html>
