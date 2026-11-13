@@ -731,7 +731,7 @@ function getScoreboardTitle(mode) {
 		return 'Server Scoreboard';
 	}
 
-	return 'Local Scoreboard';
+	return '<div style="color:#00ff66;font-weight:bold;margin:8px 0;">Updated: 13 Nov 2026 - 18:22 CET (1st Change)</div>Local Scoreboard';
 }
 
 function getWinningLine(board, token) {
