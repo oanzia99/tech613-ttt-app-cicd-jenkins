@@ -731,7 +731,7 @@ function getScoreboardTitle(mode) {
 		return 'Server Scoreboard';
 	}
 
-	return '<div style="color:#00ff66;font-weight:bold;margin:8px 0;">Updated: 13 Nov 2026 - 18:22 CET (1st Change)</div>Local Scoreboard';
+	return 'Local Scoreboard';
 }
 
 function getWinningLine(board, token) {
@@ -1138,9 +1138,9 @@ function createServer({ port = 3000, logger, metrics } = {}) {
 								</section>
 							</div>
 						</div>
-						<p class="page-footer"><div style="color:#00ff66;font-weight:bold;margin:8px 0;">Updated: 13 Nov 2026 - 18:25 CET (1st Change)</div>Copyright © 2026 Sparta Global</p>
+						<p class="page-footer">Copyright © 2026 Sparta Global</p>
 						<p class="mode-pill">Mode: ${mode.modeLabel}</p>
-						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)} - Updated: 13 Nov 2026 18:30 CET (1st Change)</p>
+						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)} - Updated: 13 Nov 2026 18:36 CET (2nd Change)</p>
 						<script src="/app.js"></script>
 					</body>
 				</html>
