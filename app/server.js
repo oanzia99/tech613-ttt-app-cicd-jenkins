@@ -97,7 +97,7 @@ function getMongoFallbackMessage(reason) {
 }
 
 function getFooterVersionStamp() {
-	const configuredTimestamp = String(process.env.APP_FOOTER_TIMESTAMP || '16 Nov 2026 11:34 CET').trim();
+	const configuredTimestamp = String(process.env.APP_FOOTER_TIMESTAMP || '16 Nov 2026 11:46 CET').trim();
 	return configuredTimestamp ? `${APP_VERSION} ${configuredTimestamp}` : APP_VERSION;
 }
 
@@ -1140,7 +1140,7 @@ function createServer({ port = 3000, logger, metrics } = {}) {
 						</div>
 						<p class="page-footer">Copyright © 2026 Sparta Global</p>
 						<p class="mode-pill">Mode: ${mode.modeLabel}</p>
-						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)} - Updated: 13 Nov 2026 18:36 CET (2nd Change)</p>
+						<p class="version-stamp">${escapeHtmlAttribute(footerVersionStamp)}</p>
 						<script src="/app.js"></script>
 					</body>
 				</html>
